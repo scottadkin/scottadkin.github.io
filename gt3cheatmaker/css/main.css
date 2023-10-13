@@ -1,0 +1,165 @@
+:root{
+    --color-red:rgb(120,0,0);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:rgb(30,48,80);
+    background:linear-gradient(to right, rgb(26,30,36), rgb(50,68,100));
+}
+
+h1{
+    font-weight:normal;
+    text-align:center;
+    padding:10px;
+    color:white;
+    font-size:18px;
+    padding:25px;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.box{
+    background-color:rgba(255,255,255,0.1);
+    color:rgb(232,232,232);
+}
+
+.box-title{
+    text-align:center;
+    font-size:26px;
+    padding:25px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.form-label{
+    text-align:right;
+    padding-right:10px;
+}
+
+.form-item{
+    padding-left:10px;
+}
+
+select{
+    min-width:200px;
+    width:33%;
+    background-color:rgb(51,51,51);
+    font-size:16px;
+    color:rgb(232,232,232);
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.7);
+    border:1px transparent;
+    padding:5px;
+}
+
+.output{
+    background-color:rgb(232,232,232);
+    color:black;
+    display:block;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+    font-size:18px;
+    line-height:24px;
+    border:1px solid rgba(0,0,0,0.5);
+    min-height:50px;
+}
+
+.warning{
+    color:white;
+    background-color:var(--color-red);
+    text-align:center;
+    padding:10px;
+}
+
+.form-wrapper{
+    text-align:center;
+    padding-bottom:25px;
+}
+
+.form-info-header{
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+    padding:5px;
+    background-color:rgb(254,169,0);
+    background:linear-gradient(to bottom, rgba(254,169,0,0.9), rgba(134,89,0,0.9));
+}
+
+.form-info{
+    text-align:center;
+}
+
+.form-info-content{
+    padding:10px;
+    text-align:center;
+    font-size:18px;
+    line-height:26px;
+    background-color:rgba(0,0,0,0.125);
+}
+
+#download-wrapper{
+    text-align:center;
+    padding:10px;
+}
+
+#download{
+    font-size:24px;
+    padding:10px;
+    background-color:var(--color-red);
+    display:inline-block;
+    min-width:200px;
+    text-align:center;
+    color:white;
+}
+
+.toggle-group{
+    background-color:rgba(0,0,0,0.125);
+    padding:5px;
+    margin-bottom:10px;
+}
+
+.toggle-info{
+    padding:5px;
+    font-size:18px;
+}
+
+.toggle-button{
+    display:inline-block;
+    padding:10px;
+    font-size:16px;
+    user-select: none;
+    background-color:var(--color-red);
+}
+
+.toggle-button:hover{
+    cursor:pointer;
+}
+
+.toggle-enabled{
+    background-color:green;
+}
+
+.hidden{
+    display:none;
+}
