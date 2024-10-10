@@ -1,0 +1,252 @@
+@font-face{
+    font-family:ut;
+    src:url(UnrealT.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+body, html{
+    height:100%;
+}
+
+#root{
+    position:relative;
+    min-height:100%;
+    min-width:100%;
+    position: absolute;
+    top:0;
+    background-color:black;
+    
+    
+}
+#content{
+    padding-bottom:75px;
+    
+}
+
+#background{
+    position:fixed;
+    top:0;
+    min-height:100%;
+    min-width:100%;
+    background-color:black;
+    background-image:url(../files/bg.jpg);
+    background-attachment: fixed;
+    background-size:100% 100%;
+    display:none;
+}
+h1{
+    color:rgb(150,150,150);
+    text-align:center;
+    font-size:32px;
+    font-weight:normal;
+    padding-bottom:10px;
+    text-shadow: 2px 2px rgb(0,0,0);
+}
+
+header{
+   /* background:linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.0));*/
+    
+    color:white;
+    opacity:0.9;
+}
+
+
+#main-logo{
+    height:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.yellow{
+    color:yellow;
+}
+
+.red{
+    color:red;
+}
+
+.white{
+    color:white;
+}
+
+nav{
+    text-align:center;
+}
+
+.s-button{
+    display:inline-block;
+    border-radius:5px;
+    margin-top:3px;
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-right:3px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-size:12px;
+    font-weight:bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:150px;
+    border:1px solid rgba(255,255,255,0.0);
+    background-color:rgba(0,0,0,0.25);
+    box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
+    background-image:url(../files/test3.png);
+    background-size:100% 100%;
+    color:rgb(200,200,200);
+}
+
+.s-button:hover{
+    cursor:pointer;
+    color:rgb(4,4,4);
+    border:1px solid rgba(255,255,255,0.0);
+    background-image:url(../files/test2.png);
+    background-size:100% 100%;
+}
+
+.s-button:hover div{
+    color:rgb(4,4,4);
+}
+
+.progress-bar{
+    height:5px;
+    background-color:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.25);
+    margin-top:5px;
+}
+
+.progress-bar-inner{
+    background-color:rgb(200,0,0);
+    height:5px;
+    transition:width 0.05s;
+}
+
+.board{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align:center;
+
+}
+
+
+.n-i, .n-i-selected{
+    text-align:center;
+    font-size:18px;
+    display:inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    padding:5px;
+    color:rgba(255,255,255,0.9);
+    border:1px solid transparent;
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.n-i img, .n-i-selected img{
+    height:100px;
+    width:100px;
+}
+
+.n-i:hover, .n-i-selected{
+    color:rgb(4,4,4);
+    cursor:pointer;
+    background-image:url(../files/test2.png);
+    opacity: 0.8;
+}
+
+.stats{
+    font-size:9px;
+    padding:5px;
+    color:rgb(150,150,150);
+}
+
+footer{
+    position:absolute;
+    width:100%;
+    padding:10px 0px;
+    font-size:12px;
+    text-align:center;
+    color:rgb(190,190,190);
+    line-height:20px;
+    bottom:0px;
+    font-weight:100;
+    background-color:rgba(0,0,0,0.8);
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+.hidden-text{
+    color:rgba(0,0,0,0.0);
+}
+
+#fart{
+    position:absolute;
+}
+
+#loading{
+    background-color:black;
+    color:rgb(200,200,200);
+    font-size:16px;
+    line-height:26px;
+    padding-top:50px;
+    text-align:center;
+    height:100vh;
+    max-height:100vh;
+    font-weight:300;
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+#loading-bar{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    height:5px;
+    background-color:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.1);
+    position: relative;
+    margin-top:25px;
+}
+
+#loading-bar-inner{
+    background-color:red;
+    height:5px;
+    width:0%;
+    transition:width 0.2s;
+}
+
+#loading-percent{
+    padding:10px;
+    font-size:14px;
+}
+
+#loading-info{
+    font-size:12px;
+    text-align:center;
+    color:green;
+    line-height:16px;
+}
